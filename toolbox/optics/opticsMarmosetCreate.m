@@ -6,7 +6,7 @@ function optics = opticsMarmosetCreate(varargin)
 %
 %
 % History:
-%    08/05/19  NPC  ISETBIO TEAM, 2018
+%    08/05/19  NPC  ISETBIO TEAM, 2019
 
     % Get the default tree-shrew optics params
     defaultParams = opticsMarmosetDefaultParams();
@@ -18,7 +18,7 @@ function optics = opticsMarmosetCreate(varargin)
     p.addParameter('focalLengthMM', defaultParams.focalLengthMM, @isnumeric);
     p.addParameter('pupilDiameterMM', defaultParams.pupilDiameterMM, @isnumeric);
     p.addParameter('wavelengthSupport', 400:10:700, @isnumeric);
-    p.addParameter('maxSF', 40.0, @isnumeric);
+    p.addParameter('maxSF', 120.0, @isnumeric);
     p.addParameter('deltaSF', 0.1, @isnumeric);
 
     % Parse input

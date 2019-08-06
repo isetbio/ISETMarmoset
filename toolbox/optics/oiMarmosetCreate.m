@@ -8,7 +8,7 @@ function oi = oiMarmosetCreate(varargin)
 %    opticsMarmosetCreate
 %
 % History:
-%    08/05/19  NPC  ISETBIO TEAM, 2018
+%    08/05/19  NPC  ISETBIO TEAM, 2019
 %
 % Examples:
 %{
@@ -18,7 +18,7 @@ function oi = oiMarmosetCreate(varargin)
 %{
     % Custom marmoset optics where we specify the sigma of the PSF
     oi = oiMarmosetCreate(...
-        'inFocusPSFsigmaMicrons', 40 ... % 40 microns
+        'inFocusPSFsigmaMicrons', 10 ... % 10 microns
     );
 %}
 

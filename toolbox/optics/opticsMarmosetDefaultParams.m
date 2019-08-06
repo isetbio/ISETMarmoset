@@ -13,11 +13,11 @@ function defaultParams = opticsMarmosetDefaultParams()
 %
 %
 % History:
-%    08/05/19  NPC  ISETBIO TEAM, 2018
+%    08/05/19  NPC  ISETBIO TEAM, 2019
 
 defaultParams = struct(...
     'opticsType', 'gaussian psf', ...
-    'inFocusPSFsigmaMicrons', 3.5, ...      % arbitrary for now
+    'inFocusPSFsigmaMicrons', 1.0, ...      % this results in a PSF whose half-width is ~1 cone diameter
     'focalLengthMM', 7.51, ...
     'pupilDiameterMM', 3.0 ...              % arbitrary for now
     );
