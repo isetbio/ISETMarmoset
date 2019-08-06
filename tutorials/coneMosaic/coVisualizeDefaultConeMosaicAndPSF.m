@@ -54,8 +54,8 @@ function coVisualizeDefaultConeMosaicAndPSF()
         'backgroundColor', [1 1 1], ...
         'ticksInVisualDegs', true);
     set(ax, 'FontSize', 16);
-    xlabel('\it space (microns)');
-    ylabel('\it space (microns)');
+    xlabel('\it space (degs)');
+    ylabel('\it space (degs)');
     
     ax = subplot(1,3,3);
     % Spectral slide of the PSF to visualize
