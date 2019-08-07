@@ -52,15 +52,19 @@ theConeMosaic = coneMosaicHex(resamplingFactor, ...
 end
 
 function theMacularPigment = marmosetMacularPigment()
-% Human macular pigment Generate marmoset-specific macular pigment
-theMacularPigment = Macular();
 
-% or custom macular pigment
-% [wave, spectralAbsorbance] = loadMarmosetMacularAbsorbance()
-% theMacularPigment = Macular(...
-%   'wave', wave, ...
-%   'density', max(spectralAbsorbance), ...
-%   'unitDensity', spectralAbsorbance);
+    useHumanData = true;
+    if (useHumanData)
+        theMacularPigment = Macular();
+        return;
+    end
+    
+    % Custom macular pigment
+    [wave, spectralAbsorbance] = loadMarmosetMacularAbsorbance()
+    theMacularPigment = Macular(...
+      'wave', wave, ...
+      'density', max(spectralAbsorbance), ...
+      'unitDensity', spectralAbsorbance);
 
 end
 

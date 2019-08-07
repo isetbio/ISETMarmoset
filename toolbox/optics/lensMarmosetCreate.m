@@ -37,6 +37,12 @@ function theLens = lensMarmosetCreate(varargin)
     p.addParameter('lensAbsorbanceFile', 'treeshrewLensAbsorbance.mat', @ischar);
     p.parse(varargin{:});
     
+    useHumanData = true;
+    if (useHumanData)
+        theLens = Lens();
+        return;
+    end
+    
     fprintf(2,'Warning. Using tree shrew lens absorbance ...\n');
     lensAbsorbanceFile = p.Results.lensAbsorbanceFile;
     targetWavelenth = p.Results.wave;
@@ -59,6 +65,5 @@ function theLens = lensMarmosetCreate(varargin)
     set(theLens,'wave', targetWavelenth);
     set(theLens,'unitDensity',unitDensity);
     
-    % TreeShrew lens absorption. Start with the human lens.
-    theLens = Lens();
+
 end
