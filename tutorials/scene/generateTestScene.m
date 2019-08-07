@@ -76,7 +76,7 @@ function renderSceneRGB(theScene)
 end
 
 function stimulusRGB = generateStimulusRGBPrimariesModulation(pixelsNum)
-    % Generate a rampling stimulus
+    % Generate a ramp stimulus
     stimulusRGB = zeros(pixelsNum,pixelsNum,3);
     for k = 1:pixelsNum
         modulation = (k-1)/pixelsNum;

@@ -30,7 +30,7 @@ function theDisplay = createCustomDisplay()
     
     % Set custom SPDs (here just a gain factor of 10)
     defaultSPDs = displayGet(theDisplay,'spd');
-    customSPDs = defaultSPDs * 10;
+    customSPDs = defaultSPDs /4;
     theDisplay = displaySet(theDisplay,'spd',customSPDs);
         
     % Plot the modified SPDs
@@ -42,7 +42,7 @@ function theDisplay = createCustomDisplay()
     % Modify the gamma (here truncate the low end)
     defaultGamma = displayGet(theDisplay, 'gamma');
     customGamma = defaultGamma;
-    idx = 1:50000;
+    idx = 1:5000;
     customGamma(idx,:) = 0;
     theDisplay = displaySet(theDisplay,'gTable',customGamma);
     plotGamma(theDisplay);

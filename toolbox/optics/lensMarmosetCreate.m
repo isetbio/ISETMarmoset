@@ -58,4 +58,7 @@ function theLens = lensMarmosetCreate(varargin)
     % Update the lens
     set(theLens,'wave', targetWavelenth);
     set(theLens,'unitDensity',unitDensity);
+    
+    % TreeShrew lens absorption. Start with the human lens.
+    theLens = Lens();
 end
