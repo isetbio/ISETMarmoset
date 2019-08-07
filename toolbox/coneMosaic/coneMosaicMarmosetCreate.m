@@ -14,7 +14,7 @@ p.addParameter('spatialDensity', [0 0.6 0.3 0.1], @isnumeric);
 p.addParameter('customLambda', 2.5, @isnumeric);
 p.addParameter('customInnerSegmentDiameter', 2.4, @isnumeric);
 p.addParameter('integrationTimeSeconds', 5/1000, @isnumeric);
-p.addParameter('sConeMinDistanceFactor', 2, @isnumeric);
+p.addParameter('sConeMinDistanceFactor', 1, @isnumeric);
 p.addParameter('resamplingFactor', 8, @isnumeric);
 % Parse input
 p.parse(varargin{:});
