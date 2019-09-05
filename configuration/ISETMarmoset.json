@@ -6,7 +6,7 @@
 		"localHookTemplate": "configuration/ISETMarmosetLocalHookTemplate.m",
 		"name": "ISETMarmoset",
 		"pathPlacement": "append",
-		"subfolder": ["toolbox", "tutorials", "compute", "validations"],
+		"subfolder": ["toolbox", "tutorials", "compute", "datafiles", "validations"],
 		"toolboxRoot": "",
 		"type": "git",
 		"update": "",
